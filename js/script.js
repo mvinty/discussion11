@@ -4,8 +4,8 @@ let pokemonList = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","C
 
 // Question 1
 
-
-
+document.getElementById("host-name").innerHTML = "Vinh Tran";
+document.getElementById("collaborator-name").innerHTML = "Nicholas Eaton";
 
 // Question 2
 // You can also create their own CSS classes in style.css file and use that. 
@@ -13,10 +13,12 @@ let pokemonList = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","C
 
 
 
+
+
 // Question 3
 // Try change event first
 // There is another event which fires for every character. This is what we want to use.
-
+firstname = document.getElementById("first_name");
 
 
 // Question 4
@@ -45,10 +47,14 @@ let pokemonList = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","C
 
 
 //Question 8
+let color = document.querySelector("#color-picker");
 
+color.addEventListener("change", func);
 
+function func(event) {
 
-
+    document.querySelector("body").style.backgroundColor =  event.target.value;
+}
 
 //Question 9 
 
